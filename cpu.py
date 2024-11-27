@@ -21,15 +21,15 @@ plt.xticks(rotation=45)
 plt.ylim(1400,1700)
 st.pyplot(fig1)
 
-amd_cpu5 = amd_cpu.sort_values('multiScore', ascending=False).head(5)
+amd_cpu5_m = amd_cpu.sort_values('multiScore', ascending=False).head(5)
 
 fig2=plt.figure(figsize=(10, 6))
-plt.bar(amd_cpu5['cpuName'], amd_cpu5['multiScore'])
-for idx, txt in enumerate(amd_cpu5['multiScore']):
+plt.bar(amd_cpu5_m['cpuName'], amd_cpu5_m['multiScore'])
+for idx, txt in enumerate(amd_cpu5_m['multiScore']):
     plt.text(idx, txt+3, str(txt), ha='center',color='blue')
 plt.xlabel('CPU Name')
 plt.ylabel('multi Score')
-plt.title('AMD CPU multi score top 5')
+plt.title('AMD CPU mutli score top 5')
 plt.xticks(rotation=45)
 plt.ylim(40000,80000)
 st.pyplot(fig2)
