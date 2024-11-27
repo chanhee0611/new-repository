@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-cpu=pd.read_csv('/content/CPU_r23_v2.csv')
+cpu=pd.read_csv('CPU_r23_v2.csv')
 st.title('cpu ranking')
 st.dataframe(cpu)
 
